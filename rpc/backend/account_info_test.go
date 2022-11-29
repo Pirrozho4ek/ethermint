@@ -10,10 +10,10 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	tmrpcclient "github.com/tendermint/tendermint/rpc/client"
 
-	"github.com/evmos/ethermint/rpc/backend/mocks"
-	rpctypes "github.com/evmos/ethermint/rpc/types"
-	"github.com/evmos/ethermint/tests"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/Pirrozho4ek/ethermint/rpc/backend/mocks"
+	rpctypes "github.com/Pirrozho4ek/ethermint/rpc/types"
+	"github.com/Pirrozho4ek/ethermint/tests"
+	evmtypes "github.com/Pirrozho4ek/ethermint/x/evm/types"
 )
 
 func (suite *BackendTestSuite) TestGetCode() {
