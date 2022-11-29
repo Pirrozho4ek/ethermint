@@ -1,4 +1,4 @@
-module github.com/evmos/ethermint
+module github.com/Pirrozho4ek/ethermint
 
 go 1.18
 
@@ -162,6 +162,7 @@ replace (
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.1.7-0.20210622111912-ef00f8ac3d76
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
+	github.com/evmos/ethermint => github.com/Pirrozho4ek/ethermint v0.0.0
 )
 
 replace github.com/confio/ics23/go => github.com/cosmos/cosmos-sdk/ics23/go v0.8.0
