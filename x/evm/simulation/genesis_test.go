@@ -8,12 +8,12 @@ import (
 	sdkmath "cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
 
+	"github.com/Pirrozho4ek/ethermint/x/evm/simulation"
+	"github.com/Pirrozho4ek/ethermint/x/evm/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/evmos/ethermint/x/evm/simulation"
-	"github.com/evmos/ethermint/x/evm/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

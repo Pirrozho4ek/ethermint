@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
+	ethermint "github.com/Pirrozho4ek/ethermint/types"
 	"github.com/cosmos/cosmos-sdk/client"
-	ethermint "github.com/evmos/ethermint/types"
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 )
 
