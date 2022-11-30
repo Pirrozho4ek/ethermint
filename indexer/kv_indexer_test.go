@@ -4,16 +4,16 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/simapp/params"
-	"github.com/ethereum/go-ethereum/common"
-	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/Pirrozho4ek/ethermint/app"
 	"github.com/Pirrozho4ek/ethermint/crypto/ethsecp256k1"
 	evmenc "github.com/Pirrozho4ek/ethermint/encoding"
 	"github.com/Pirrozho4ek/ethermint/indexer"
 	"github.com/Pirrozho4ek/ethermint/tests"
 	"github.com/Pirrozho4ek/ethermint/x/evm/types"
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/simapp/params"
+	"github.com/ethereum/go-ethereum/common"
+	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmlog "github.com/tendermint/tendermint/libs/log"
@@ -40,7 +40,7 @@ func TestKVIndexer(t *testing.T) {
 	clientCtx := client.Context{}.WithTxConfig(encodingConfig.TxConfig).WithCodec(encodingConfig.Codec)
 
 	// build cosmos-sdk wrapper tx
-	tmTx, err := tx.BuildTx(clientCtx.TxConfig.NewTxBuilder(), "aphoton")
+	tmTx, err := tx.BuildTx(clientCtx.TxConfig.NewTxBuilder(), "aENTGL")
 	require.NoError(t, err)
 	txBz, err := clientCtx.TxConfig.TxEncoder()(tmTx)
 	require.NoError(t, err)
